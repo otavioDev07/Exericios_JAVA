@@ -15,7 +15,7 @@ public class CurrencyConverter {
         double DOLLAR = sc.nextDouble();
 
         double REAL = (DOLLAR * PRICE) * 1.06;
-        System.out.printf("Amount to be paid in reais: %.2f", REAL);
+        System.out.printf("Amount to be paid in REAIS: %.2f", REAL);
 
 
         sc.close();
