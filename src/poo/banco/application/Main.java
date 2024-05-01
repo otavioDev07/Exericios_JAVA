@@ -29,10 +29,10 @@ public class Main {
         String acHolder = sc.nextLine();
 
         System.out.println("Is there an initial deposit? (y/n): ");
-        String initialDeposit = sc.nextLine();
+        char response = sc.next().charAt(0);
 
         Account account;
-        if (initialDeposit.equalsIgnoreCase("y")){
+        if (response == 'y'){
             System.out.println("Enter initial deposit value: ");
             Double value = sc.nextDouble();
             account = new Account(acHolder, acNum, value);
