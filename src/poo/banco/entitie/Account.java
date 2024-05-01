@@ -25,14 +25,23 @@ public class Account {
     public void withdraw(Double valor){
         balance -= (valor + 5.0);
     }
-
-    public void setHolderName(String holderName){
-        this.holderName = holderName;
-    }
-
     public String toString(){
         return "Account "+ACCOUNT_NUMBER+", "+"Holder: "+holderName+", "+"Balance: $"+balance;
     }
 
+    public String getHolderName() {
+        return holderName;
+    }
 
+    public String getACCOUNT_NUMBER() {
+        return ACCOUNT_NUMBER;
+    }
+
+    public Double getBalance() {
+        return balance;
+    }
+
+    public void setHolderName(String holderName) {
+        this.holderName = holderName;
+    }
 }
