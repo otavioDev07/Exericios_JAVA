@@ -31,7 +31,7 @@ public class Main {
 
         double sumHeights = 0;
         for (Person person : people) {
-            sumHeights += person.getHeight();
+            sumHeights += person.height();
         }
         double averageHeight = sumHeights / people.length;
         System.out.printf("Average Height: %.2f%n", averageHeight);
@@ -40,8 +40,8 @@ public class Main {
         int underSixteen = 0;
         boolean Sixteen = Boolean.FALSE; // Can be true, false ou null
         for (Person person : people) {
-            if (person.getAge() < 16) {
-                System.out.println(person.getName());
+            if (person.age() < 16) {
+                System.out.println(person.name());
                 underSixteen++;
                 Sixteen = true;
             }
