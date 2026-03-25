@@ -4,8 +4,8 @@ import poo.fixacaoException.models.exceptions.AboveLimit;
 import poo.fixacaoException.models.exceptions.NoBalance;
 
 public class Account {
-    private Integer number;
-    private String holder;
+    private final int number;
+    private final String holder;
     private Double balance;
     private Double withdrawLimit;
 
